@@ -1,0 +1,161 @@
+
+*{
+    -fx-font-family: Roboto;
+    -fx-base-color-focus:#09b6bc;
+    -fx-base-color-unfocus:#4d4d4d;
+    -fx-base-color-etiquetas:#4d4d4d/*#bcbcbc*/;
+    -fx-base-color-titulos:#51b6cd;
+    -fx-base-color-error:#D34336;
+    -fx-base-color-id:#00C853;
+    
+}
+
+.jfx-button{
+    -jfx-button-type: RAISED;
+    -fx-opacity: 0.8;
+    -fx-content-display: left;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment:CENTER_LEFT;
+}
+
+
+/*******************************************************************************
+*                                                                              *
+* Menu principal                                                                 *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-menubutton1,.jfx-menubutton2{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment:CENTER;
+}
+.jfx-menubutton1{-fx-background-color: #2196F3;}
+.jfx-menubutton2{-fx-background-color: #00C853;}
+
+
+/*******************************************************************************
+*                                                                              *
+* Botones                                                                *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-btnimg-tbveliminar{
+    -fx-opacity: 0.8;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-color: #f44336;
+    -fx-background-image : url("../resources/Eliminar-48.png");
+}
+.jfx-btnimg-agregar,.jfx-btnimg-siguiente{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: #2196F3;
+}
+.jfx-btnimg-aplicar, .jfx-btnimg-buscar{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: #00bcd4;
+}
+.jfx-btn-nuevo{-fx-background-color: #2196F3;}
+.jfx-btn-buscar{-fx-background-color: #00bcd4;}
+.jfx-btn-eliminar{-fx-background-color: #f44336;}
+.jfx-btn-guardar,.jfx-btn-generar{-fx-background-color: #00C853;}
+
+.jfx-btn-nuevo > ImageView,.jfx-btnimg-agregar > ImageView{-fx-image: url("../resources/Agregar-48.png");}
+.jfx-btn-buscar > ImageView,.jfx-btnimg-buscar > ImageView{-fx-image: url("../resources/Buscar-48.png");}
+.jfx-btn-eliminar > ImageView{-fx-image: url("../resources/Eliminar-48.png");}
+.jfx-btn-guardar > ImageView{-fx-image: url("../resources/Guardar-48.png");}
+.jfx-btnimg-siguiente > ImageView{-fx-image: url("../resources/Siguiente-48.png");}
+.jfx-btnimg-aplicar > ImageView{-fx-image: url("../resources/Aplicar-48.png");}
+.jfx-btn-generar > ImageView{-fx-image: url("../resources/Generar-48.png");}
+
+/*******************************************************************************
+*                                                                              *
+* Paneles                                                                 *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-panelfondo {
+    -fx-background-color: #2196F3;
+    -fx-opacity: 0.8;
+}
+.jfx-panelfondo > AnchorPane{
+    -fx-background-color: White;
+    -fx-border-color: #97a692;
+    -fx-border-width: 10px;
+}
+.jfx-contenedor-principal,.jfx-contenedor-secundario {
+    -fx-background-color: white;
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 10.0, 0.7, 0.0,1.5);
+    -fx-padding: 25 15 15 15;
+}
+.jfx-contenedor-secundario{-fx-padding: 5 10 10 10;}
+
+/*******************************************************************************
+*                                                                              *
+* Etiquetas                                                                    *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-lbl-general{
+    -fx-font-size: 14.0px;
+    -fx-text-fill: -fx-base-color-etiquetas;
+}
+.jfx-titulo-label-fondo{
+    -fx-background-color: #2196F3;
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
+.jfx-titulo-label{
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: -fx-base-color-titulos;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
+.jfx-subtitulo-label{
+    -fx-font-size: 14.0px;
+    -fx-text-fill: -fx-base-color-titulos;
+    -fx-font-weight: bold; 
+}
+
+/*******************************************************************************
+*                                                                              *
+* Paneles                                                                 *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-panelfondo {
+    -fx-background-color: #2196F3;
+    -fx-opacity: 0.8;
+}
+.jfx-panelfondo > AnchorPane{
+    -fx-background-color: White;
+    -fx-border-color: #97a692;
+    -fx-border-width: 10px;
+}
+
+/*******************************************************************************
+*                                                                              *
+* Campos de texto                                                                 *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-txt-numerico{-fx-alignment:CENTER_RIGHT;}
+.jfx-txt-id{
+    -fx-prompt-text-fill: -fx-base-color-id;
+    -jfx-focus-color: -fx-base-color-id;
+    -jfx-unfocus-color: -fx-base-color-id;
+}

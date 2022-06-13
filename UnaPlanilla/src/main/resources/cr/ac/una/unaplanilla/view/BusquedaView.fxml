@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-padding: 0 0 0 0;" styleClass="jfx-contenedor-principal" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.BusquedaViewController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="180.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="177.0" styleClass="jfx-titulo-label-fondo" text="Parametros" VBox.vgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding></Label>
+                  <ScrollPane prefHeight="364.0" prefWidth="180.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="vbxParametros" prefHeight="439.0" prefWidth="146.0" spacing="15.0">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding></VBox>
+                     </content>
+                  </ScrollPane>
+                  <JFXButton fx:id="btnFiltrar" prefHeight="45.0" prefWidth="163.0" styleClass="jfx-menubutton1" text="Filtrar" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="424.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lblTitulo" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="jfx-titulo-label-fondo" text="Busqueda" VBox.vgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding></Label>
+                  <TableView fx:id="tbvResultados" onMousePressed="#onMousePressenTbvResultados" prefHeight="354.0" prefWidth="407.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnAceptar" onAction="#onActionBtnAceptar" styleClass="jfx-menubutton2" text="Aceptar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
